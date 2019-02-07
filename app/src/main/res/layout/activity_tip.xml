@@ -1,0 +1,156 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context="com.example.bulldogtipper.TipActivity" >
+
+
+        <EditText
+            android:id="@+id/etBillAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="41dp"
+            android:layout_marginRight="16dp"
+            android:ems="10"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="number|numberDecimal"
+            android:textSize="20sp">
+
+        </EditText>
+
+        <SeekBar
+            android:id="@+id/sbTipPct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBillAmount"
+            android:layout_alignLeft="@+id/etBillAmount"
+            android:layout_alignRight="@+id/etBillAmount"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginRight="0dp" />
+
+        <TextView
+            android:id="@+id/tvBillLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etBillAmount"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:text="@string/bill"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/tvTipPctLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etBillAmount"
+            android:layout_alignLeft="@+id/sbTipPct"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="13dp"
+            android:text="@string/tip_pct"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/tvTotalLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp"
+            android:paddingLeft="20dp"
+            android:text="@string/totalEach"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvTotalAmountEach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTotalLabel"
+            android:layout_alignBottom="@+id/tvTotalLabel"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvTipLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/tvTotalLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="30dp"
+            android:paddingLeft="20dp"
+            android:text="@string/tip"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTipLabel"
+            android:layout_alignBottom="@+id/tvTipLabel"
+            android:layout_alignParentRight="true"
+            android:paddingRight="20dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/tvTipPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tvTipPctLabel"
+            android:layout_alignBottom="@+id/tvTipPctLabel"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <NumberPicker
+            android:id="@+id/npNumPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNumPeople"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-84dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginRight="66dp" />
+
+        <TextView
+            android:id="@+id/tvNumPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sbTipPct"
+            android:layout_marginTop="88dp"
+            android:layout_toEndOf="@+id/tvTipPctLabel"
+            android:text="@string/num_of_people"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="152dp"
+            android:paddingRight="20dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+        <TextView
+            android:id="@+id/tvTotalEachLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginBottom="150dp"
+            android:paddingLeft="20dp"
+            android:text="@string/totalMain"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+</RelativeLayout>
